@@ -1,4 +1,4 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
     event.preventDefault();
   
     // Get form values
@@ -14,7 +14,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
       confirmationMessage.textContent = `Thank you, ${name}! Your message has been sent.`;
   
       // Clear the form
-      document.getElementById("contactForm").reset();
+      document.getElementById("feedbackForm").reset();
     } else {
       alert("Please fill in all fields.");
     }
